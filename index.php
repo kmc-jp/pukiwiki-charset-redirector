@@ -11,10 +11,10 @@ if (! isset($_GET['cmd']) && ! isset($_GET['plugin'])) {
 
 } else {
 
-  if (isset($GET['page'])) {
+  if (isset($_GET['page'])) {
     $_GET['page'] = mb_convert_encoding($_GET['page'], 'utf-8', 'euc-jp');
   }
-  if (isset($GET['body'])) {
+  if (isset($_GET['body'])) {
     $_GET['body'] = mb_convert_encoding($_GET['body'], 'utf-8', 'euc-jp');
   }
 
