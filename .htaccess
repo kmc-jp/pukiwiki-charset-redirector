@@ -1,0 +1,13 @@
+RewriteEngine on
+
+# GET 系以外は 405
+RewriteCond %{REQUEST_METHOD} !^(GET|HEAD)
+RewriteRule . - [L,R=405]
+
+# / とindex.php 以外は 404
+RewriteCond %{REQUEST_URI} !/index\.php$ [OR]
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule . - [L,R=404]
+
+# / は index.php に飛ばす
+DirectoryIndex index.php
