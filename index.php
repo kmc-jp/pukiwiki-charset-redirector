@@ -14,8 +14,8 @@ if (! isset($_GET['cmd']) && ! isset($_GET['plugin'])) {
   if (isset($_GET['page'])) {
     $_GET['page'] = mb_convert_encoding($_GET['page'], 'utf-8', 'euc-jp');
   }
-  if (isset($_GET['body'])) {
-    $_GET['body'] = mb_convert_encoding($_GET['body'], 'utf-8', 'euc-jp');
+  if (isset($_GET['word'])) {
+    $_GET['word'] = mb_convert_encoding($_GET['word'], 'utf-8', 'euc-jp');
   }
 
   $query_string = http_build_query($_GET);
