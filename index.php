@@ -23,4 +23,4 @@ if (! isset($_GET['cmd']) && ! isset($_GET['plugin'])) {
 }
 
 # TODO: change path
-header("Location: /~nonylene/pukiwiki/?" . $query_string, TRUE, 301);
+header("Location: /wiki/?" . $query_string, TRUE, 301);
