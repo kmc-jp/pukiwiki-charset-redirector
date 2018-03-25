@@ -22,5 +22,4 @@ if (! isset($_GET['cmd']) && ! isset($_GET['plugin'])) {
 
 }
 
-# TODO: change path
 header("Location: /wiki/?" . $query_string, TRUE, 301);
